@@ -28,12 +28,10 @@ namespace Fooyin::XSFInput {
 namespace {
 class XSFInputPluginSettingsProvider : public Fooyin::PluginSettingsProvider
 {
-public:
-    void showSettings(QWidget* parent) override
+protected:
+    [[nodiscard]] QDialog* createSettings(QWidget* parent) override
     {
-        auto* dialog = new XSFInputSettings(parent);
-        dialog->setAttribute(Qt::WA_DeleteOnClose);
-        dialog->show();
+        return new XSFInputSettings(parent);
     }
 };
 } // namespace

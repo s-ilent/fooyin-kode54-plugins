@@ -30,7 +30,7 @@ class VGMStreamInputPlugin : public QObject,
                        public Fooyin::PluginConfigGuiPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "org.fooyin.fooyin.plugin/1.0" FILE "vgmstreaminput.json")
+    Q_PLUGIN_METADATA(IID FOOYIN_PLUGIN_IID FILE "vgmstreaminput.json")
     Q_INTERFACES(Fooyin::Plugin Fooyin::InputPlugin Fooyin::PluginConfigGuiPlugin)
 
 public:

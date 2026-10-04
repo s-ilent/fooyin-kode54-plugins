@@ -30,7 +30,7 @@ class MIDIInputPlugin : public QObject,
                         public Fooyin::PluginConfigGuiPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "org.fooyin.fooyin.plugin/1.0" FILE "midiinput.json")
+    Q_PLUGIN_METADATA(IID FOOYIN_PLUGIN_IID FILE "midiinput.json")
     Q_INTERFACES(Fooyin::Plugin Fooyin::InputPlugin Fooyin::PluginConfigGuiPlugin)
 
 public:
